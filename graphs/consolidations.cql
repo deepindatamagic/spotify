@@ -65,7 +65,7 @@ WHERE b.artists = actors
 RETURN actors, pnodes AS musicians, b AS artist
 LIMIT 10
 
-
+// extremely slow
 MATCH (p:Musicians),(b:Artists)
 WITH p.artists AS artists, p, b
 UNWIND artists AS actors
