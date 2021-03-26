@@ -15,7 +15,7 @@ CALL apoc.periodic.iterate(
         toFloat(row.liveness) AS liveness,
         toInteger(row.popularity) AS popularity, 
         toFloat(row.speechiness) AS speechiness,
-        toFloat(row.tempo) AS tempo, toInteger(row.mode) AS mode, toInteger(row.Explicit) AS explicit,
+        toFloat(row.tempo) AS tempo, toInteger(row.mode) AS mode, toInteger(row.explicit) AS explicit,
         row.artists AS artists, toInteger(row.key) AS key   
 
     MERGE (art:ArtsData {
