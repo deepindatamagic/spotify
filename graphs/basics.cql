@@ -2,6 +2,10 @@
 // Santos Borom 2021
 // License: Creative Commons License
 
+CALL db.constraints
+
+CALL db.indexes();
+
 MATCH (a:Arts)
 UNWIND a.genres  AS gene
 RETURN a
