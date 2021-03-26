@@ -13,7 +13,7 @@ LIMIT 10
 
 // delete nodes
 CALL apoc.periodic.iterate(
-  'MATCH (a:Arts) RETURN a',
+  'MATCH (a:Years) RETURN a',
   'DETACH DELETE a',
   { batchSize:500 }
 )

@@ -5,7 +5,7 @@
 
 // constraints
 CREATE CONSTRAINT ON (track:Songs)  ASSERT track.id IS UNIQUE;
-CREATE CONSTRAINT ON (arts:Artists) ASSERT arts.artists IS UNIQUE;
+CREATE CONSTRAINT ON (arts:ArtistsTmp) ASSERT arts.artists IS UNIQUE;
 
 
 CALL apoc.periodic.iterate(
